@@ -2,30 +2,8 @@
 body
 {
   background-color: #5E000F;
-  margin: 0;
-  padding: 0;
   display: grid;
-  grid-template: 1fr 1fr 1fr 1fr / 2fr 1fr;
-  grid-template-areas: "header header"
-  "left right"
-  "footer footer";
-  height: 100vh;
-}
-.header
-{
-    grid-area: header;
-}
-.left
-{
-    grid-area: left;
-}
-.right
-{
-    grid-area: right;
-}
-.footer
-{
-    grid-area: footer;
+  height: 100vh
 }
 
 /*Contenido del header*/
@@ -98,25 +76,28 @@ button
 }
 
 /*Contenido de la sección principal*/
-.left
+.contenedor_left
 {
-  width: fit-content;
-  height: fit-content;
-}
-.mainsection
-{
-  margin-top: 10em;
-  position: relative;
-  background-color: #3E000F;
-  width: 100%;
-  height: auto;
-  color: #CCCCCC;
-  margin: 1em;
-  padding: .3em;
+  background-color: #2E000F;
   border-style: solid;
-  border-color: #000000;
-  border-width: .2em;
+  border-color: black;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  height: 110vh;
 }
+
+
+.terminos
+{
+  color: white;
+  font-weight: 600;
+  font-size: 1.0em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .maintitle
 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -140,10 +121,9 @@ button
 .maingridarea
 {
   display: grid;
-  grid-template: 1fr 1fr 1fr/1fr 1fr 1fr 1fr;
-  margin: 1em;
+  grid-template: 1fr 1fr 1fr 1fr 1fr 1fr /1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 3%;
-  height: 100vh;
+  height: fit-content;
 }
 
 /*Contenido del side*/
@@ -181,6 +161,11 @@ button
 }
 
 /*Contenido del footer*/
+.footerpos
+{
+  margin-bottom: 0%;
+}
+
 .footerflex
 {
   display: flex;
